@@ -72,6 +72,30 @@
           ]
         }
       ]
+    },
+    {
+      "description": "iterm2: left option to command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_option"
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.gnu.Emacs"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
