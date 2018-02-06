@@ -1,0 +1,77 @@
+{
+  "title": "Caps lock should be control in iterm2",
+  "rules": [
+    {
+      "description": "iterm2: caps to control",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "iterm2: control to caps",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control"
+          },
+          "to": [
+            {
+              "key_code": "caps_lock"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "iterm2: left command as alt",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

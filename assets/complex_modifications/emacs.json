@@ -1,0 +1,101 @@
+{
+  "title": "Emacs key bindings",
+  "rules": [
+    {
+      "description": "emacs: caps as control",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to": [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.gnu.Emacs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "emacs: control to caps",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_control"
+          },
+          "to": [
+            {
+              "key_code": "caps_lock"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.gnu.Emacs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "emacs: left option to command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_option"
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.gnu.Emacs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "emacs: left command to alt",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_command"
+          },
+          "to": [
+            {
+              "key_code": "left_alt"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org.gnu.Emacs"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
