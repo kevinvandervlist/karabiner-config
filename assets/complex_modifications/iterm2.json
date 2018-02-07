@@ -26,6 +26,36 @@
       ]
     },
     {
+      "description": "iterm2: shift-caps as shift-control",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "mandatory": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_control",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "iterm2: control to caps",
       "manipulators": [
         {
@@ -90,7 +120,37 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^org.gnu.Emacs"
+                "^com.googlecode.iterm2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "emacs: alt-caps as alt-control",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "mandatory": ["option"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_control",
+              "modifiers": [
+                "option"
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com.googlecode.iterm2"
               ]
             }
           ]
