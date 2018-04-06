@@ -1,8 +1,8 @@
 {
-  "title": "Intellij key bindings",
+  "title": "mac: Intellij key bindings",
   "rules": [
     {
-      "description": "intellij: caps as control",
+      "description": "mac: intellij: caps as control",
       "manipulators": [
         {
           "type": "basic",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "description": "intellij: shift-caps as shift-control",
+      "description": "mac: intellij: shift-caps as shift-control",
       "manipulators": [
         {
           "type": "basic",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "description": "intellij: control to caps",
+      "description": "mac: intellij: control to caps",
       "manipulators": [
         {
           "type": "basic",
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "description": "intellij: left option to command",
+      "description": "mac: intellij: left option to command",
       "manipulators": [
         {
           "type": "basic",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "description": "intellij: left command to alt",
+      "description": "mac: intellij: left command to alt",
       "manipulators": [
         {
           "type": "basic",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "description": "intellij: alt-caps as alt-control",
+      "description": "mac: intellij: alt-caps as alt-control",
       "manipulators": [
         {
           "type": "basic",

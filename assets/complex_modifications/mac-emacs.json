@@ -1,8 +1,8 @@
 {
-  "title": "Emacs key bindings",
+  "title": "mac: Emacs key bindings",
   "rules": [
     {
-      "description": "emacs: caps as control",
+      "description": "mac: emacs: caps as control",
       "manipulators": [
         {
           "type": "basic",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "description": "emacs: shift-caps as shift-control",
+      "description": "mac: emacs: shift-caps as shift-control",
       "manipulators": [
         {
           "type": "basic",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "description": "emacs: control to caps",
+      "description": "mac: emacs: control to caps",
       "manipulators": [
         {
           "type": "basic",
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "description": "emacs: left option to command",
+      "description": "mac: emacs: left option to command",
       "manipulators": [
         {
           "type": "basic",
@@ -109,7 +109,7 @@
       ]
     },
     {
-      "description": "emacs: left command to alt",
+      "description": "mac: emacs: left command to alt",
       "manipulators": [
         {
           "type": "basic",
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "description": "emacs: alt-caps as alt-control",
+      "description": "mac: emacs: alt-caps as alt-control",
       "manipulators": [
         {
           "type": "basic",

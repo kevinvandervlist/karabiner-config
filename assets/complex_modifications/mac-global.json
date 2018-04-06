@@ -1,0 +1,43 @@
+{
+  "title": "mac: Global key bindings",
+  "rules": [
+    {
+      "description": "mac: global: caps as command",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock"
+          },
+          "to": [
+            {
+              "key_code": "left_command"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "mac: global: shift-caps as shift-control",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "mandatory": ["shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_control",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
-  "title": "Caps lock should be control in iterm2",
+  "title": "mac: Caps lock should be control in iterm2",
   "rules": [
     {
-      "description": "iterm2: caps to control",
+      "description": "mac: iterm2: caps to control",
       "manipulators": [
         {
           "type": "basic",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "description": "iterm2: shift-caps as shift-control",
+      "description": "mac: iterm2: shift-caps as shift-control",
       "manipulators": [
         {
           "type": "basic",
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "description": "iterm2: control to caps",
+      "description": "mac: iterm2: control to caps",
       "manipulators": [
         {
           "type": "basic",
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "description": "iterm2: left command as alt",
+      "description": "mac: iterm2: left command as alt",
       "manipulators": [
         {
           "type": "basic",
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "description": "iterm2: left option to command",
+      "description": "mac: iterm2: left option to command",
       "manipulators": [
         {
           "type": "basic",
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "description": "emacs: alt-caps as alt-control",
+      "description": "mac: iterm2: alt-caps as alt-control",
       "manipulators": [
         {
           "type": "basic",
