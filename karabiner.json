@@ -641,10 +641,11 @@
                 }
             ],
             "name": "Laptop",
-            "selected": true,
+            "selected": false,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
+                "country_code": 0,
                 "keyboard_type": "ansi"
             }
         },
@@ -935,13 +936,13 @@
                         ]
                     },
                     {
-                        "description": "mac: intellij: caps as control",
+                        "description": "mac: Jetbrains: caps as control",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.jetbrains.intellij"
+                                            "^com.jetbrains"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -959,13 +960,13 @@
                         ]
                     },
                     {
-                        "description": "mac: intellij: shift-caps as shift-control",
+                        "description": "mac: Jetbrains: shift-caps as shift-control",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.jetbrains.intellij"
+                                            "^com.jetbrains"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -991,13 +992,13 @@
                         ]
                     },
                     {
-                        "description": "mac: intellij: control to caps",
+                        "description": "mac: Jetbrains: control to caps",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.jetbrains.intellij"
+                                            "^com.jetbrains"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -1015,13 +1016,37 @@
                         ]
                     },
                     {
-                        "description": "mac: intellij: left command to alt",
+                        "description": "mac: Jetbrains: left option to command",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.jetbrains.intellij"
+                                            "^com.jetbrains"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_option"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_command"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "mac: Jetbrains: left command to alt",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com.jetbrains"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -1039,13 +1064,13 @@
                         ]
                     },
                     {
-                        "description": "mac: intellij: alt-caps as alt-control",
+                        "description": "mac: Jetbrains: alt-caps as alt-control",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com.jetbrains.intellij"
+                                            "^com.jetbrains"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -1064,22 +1089,6 @@
                                         "modifiers": [
                                             "option"
                                         ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "mac: global: caps as command",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "caps_lock"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_command"
                                     }
                                 ],
                                 "type": "basic"
@@ -1104,6 +1113,22 @@
                                         "modifiers": [
                                             "left_shift"
                                         ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "mac: global: caps as command",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_command"
                                     }
                                 ],
                                 "type": "basic"
@@ -1212,10 +1237,11 @@
                 }
             ],
             "name": "Keyboard",
-            "selected": false,
+            "selected": true,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
+                "country_code": 0,
                 "keyboard_type": ""
             }
         }

@@ -1,8 +1,8 @@
 {
-  "title": "mac: Intellij key bindings",
+  "title": "mac: Jetbrains key bindings",
   "rules": [
     {
-      "description": "mac: intellij: caps as control",
+      "description": "mac: Jetbrains: caps as control",
       "manipulators": [
         {
           "type": "basic",
@@ -18,7 +18,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.jetbrains.intellij"
+                "^com.jetbrains"
               ]
             }
           ]
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "description": "mac: intellij: shift-caps as shift-control",
+      "description": "mac: Jetbrains: shift-caps as shift-control",
       "manipulators": [
         {
           "type": "basic",
@@ -48,7 +48,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.jetbrains.intellij"
+                "^com.jetbrains"
               ]
             }
           ]
@@ -56,7 +56,7 @@
       ]
     },
     {
-      "description": "mac: intellij: control to caps",
+      "description": "mac: Jetbrains: control to caps",
       "manipulators": [
         {
           "type": "basic",
@@ -72,7 +72,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.jetbrains.intellij"
+                "^com.jetbrains"
               ]
             }
           ]
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "description": "mac: intellij: left option to command",
+      "description": "mac: Jetbrains: left option to command",
       "manipulators": [
         {
           "type": "basic",
@@ -96,7 +96,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.jetbrains.intellij"
+                "^com.jetbrains"
               ]
             }
           ]
@@ -104,7 +104,7 @@
       ]
     },
     {
-      "description": "mac: intellij: left command to alt",
+      "description": "mac: Jetbrains: left command to alt",
       "manipulators": [
         {
           "type": "basic",
@@ -120,7 +120,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.jetbrains.intellij"
+                "^com.jetbrains"
               ]
             }
           ]
@@ -128,7 +128,7 @@
       ]
     },
     {
-      "description": "mac: intellij: alt-caps as alt-control",
+      "description": "mac: Jetbrains: alt-caps as alt-control",
       "manipulators": [
         {
           "type": "basic",
@@ -150,7 +150,7 @@
             {
               "type": "frontmost_application_if",
               "bundle_identifiers": [
-                "^com.jetbrains.intellij"
+                "^com.jetbrains"
               ]
             }
           ]
